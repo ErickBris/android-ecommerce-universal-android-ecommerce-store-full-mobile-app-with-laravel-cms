@@ -1,0 +1,6 @@
+{
+  // Replace with your own google_services.json file
+  // Get your file from  (@link  https://support.google.com/firebase/answer/7015592?hl=en)
+
+  // It is very important to import a Google project with Maps API enabled, to Firebase as we need both Google Maps and FCM services in android app.
+}

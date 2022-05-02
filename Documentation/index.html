@@ -1,0 +1,600 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Documentation &#8211; AndroidEcommerce Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;AndroidEcommerce&rdquo; Documentation by &ldquo;VectorCoder&rdquo; v2.1</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;AndroidEcommerce&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 12/Oct/2017<br>
+					By: VectorCoder<br>
+					Email: <a href="mailto:vectorcoder@hotmail.com">vectorcoder@hotmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page <a href="https://codecanyon.net/user/vectorcoder" target="_blank">contact form</a> Or we also provide support through our website <a href="http://Androidecommerce.com/support/" target="_blank">support panel</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#introduction">Introduction</a>
+				<ol class="alpha">
+					<li><a href="#this_app">Why This App?</a></li>
+					<li><a href="#tools">Tools & Technologies</a></li>
+				</ol>
+				</li>
+			<li><a href="#installations">Installation - Laravel CMS</a>
+				<ol class="alpha">
+					<li><a href="#server">Server Requirements</a></li>
+					<li><a href="#source">Laravel Source Code Setup</a></li>
+					<li><a href="#db-setup">Mysql Database Setup</a></li>
+					<li><a href="#settings">Upload Files &amp; Settings</a></li>
+				</ol>
+			</li>		
+			
+			<li><a href="#android_installation">Installation - Android Mobile App</a>
+				<ol class="alpha">
+					<li><a href="#started">Getting Started</a></li>
+					<li><a href="#studio">Android Studio Setting</a></li>
+					<li><a href="#import">Import Project in Android Studio</a></li>
+					<li><a href="#rename">Rename App Package Name</a></li>
+					<li><a href="#change_path">Change Package Path in the Code</a></li>
+					<li><a href="#configuration">Google and FCM Configuration</a></li>
+					<li><a href="#app_key">Facebook and Google App Key</a></li>
+					<li><a href="#server_url">Change Server URL in Application</a></li>
+					<li><a href="#debug">Debug Application</a></li>
+					<li><a href="#test">Test Application</a></li>
+					<li><a href="#create">Create Release APK</a></li>
+				</ol>
+			</li>
+			
+			<li><a href="#faq">FAQ'S</a></li>
+		</ol>
+		
+		<hr>
+		<div class="mkb-content-main mkb-content-main--article mkb-content-main--has-sidebar"><div id="mkb-article-12178"><div class="mkb-single-content"><div class="mkb-single-content__text">	
+<div class="mkb-article-text"><div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline">
+	<h2 data-fontsize="24" data-lineheight="43" class="mkb-anchor__title" id="introduction">Introduction <a href="#toc" title="To top" style="font-size:16px;">To Top</a></h2></div>
+<p>AndroidEcommerce app built with native Java in Android Studio. It’s complete mobile ecommerce app solution for android devices with advanced CMS. It offers more than 35 pages and all are fully designed &amp; keeping in mind to fit for any product types. It’s best app for any type of store like Fashion, Electronics, Grocery and Restaurant. It is fully rich featured application that offers all required features, that can fulfill any modern application. It’s easy to customize, you can customize any page as per your needs. It follows all the standards to fulfill customer’s requirements.</p>
+<p><strong id="this_app">Why This App?</strong> <a href="#toc" title="To top" style="font-size:16px;">To Top</a></h2></div></p>
+<p>There are lot of reasons you should choose this application for</p>
+<ul>
+<li>CMS for managing overall store activities</li>
+<li>Easy to install</li>
+<li>Easy to customize</li>
+<li>Super friendly code</li>
+<li>Well commented code</li>
+<li>Design to fit any product types</li>
+<li>Basics knowledge for setup</li>
+<li>Equip with all modern features</li>
+<li>Multiple themes for app home and category screen</li>
+<li>Just choose design you like and go</li>
+</ul>
+<p><strong id="tools">Tools &amp; Technologies</strong> <a href="#toc" title="To top" style="font-size:16px;">To Top</a></p>
+<p>App build with latest tools using advance techniques fulfilling all the needs of modern app.</p>
+<ol>
+<li><a href="https://developer.android.com/studio/intro/index.html">Android Studio</a> is the official Integrated Development Environment (IDE) for Android app development, based on&nbsp;<a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>. On top of IntelliJ’s powerful code editor and developer tools, Android Studio offers even more features that enhance your productivity when building Android apps.<br>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	<a href="https://developer.android.com/studio/intro/index.html">https://developer.android.com/studio/intro/index.html</a>			</div>
+</div>
+</div> <div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	<a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a>			</div>
+</div>
+</div>
+</li>
+<li><a href="http://www.gradle.org/">Gradle</a> is an advanced build toolkit, to automate and manage the build process, while allowing you to define flexible custom build configurations. Each build configuration can define its own set of code and resources, while reusing the parts common to all versions of your app. The Android plugin for Gradle works with the build toolkit to provide processes and configurable settings that are specific to building and testing Android applications.<br>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="http://www.gradle.org/"> http://www.gradle.org/ </a> 			</div>
+</div>
+</div>
+</li>
+<li><a href="https://laravel.com">Laravel</a> is a powerful and most popular framework that emphasizes flexibility and expressiveness. Laravel is a free, open-source PHP framework, intended for the development of web applications following the model–view–controller (MVC) architectural pattern.<br>
+ <div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://laravel.com"> https://laravel.com</a> 			</div>
+</div>
+</div>
+ </li>
+<li><a href="https://firebase.google.com">Firebase Cloud Messaging</a>&nbsp;provides a reliable and battery-efficient connection between your server and devices that allows you to deliver and receive messages and notifications on your mobile device. Using FCM, we can send notification messages to drive user re-engagement and retention.<br>
+ <div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://firebase.google.com"> https://firebase.google.com</a> 			</div>
+</div>
+</div>
+ </li>
+</ol>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h2 id="installations" data-fontsize="24" data-lineheight="43" class="mkb-anchor__title" >Installation – Laravel CMS <a href="#toc" title="To top" style="font-size:16px;">To Top</a></h2></div>
+<p>First of all you need to setup your ecommerce store admin panel. Please follow step by step instructions below.</p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="server">Server Requirements <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>The Laravel framework has a few system requirements. Of course, all of these requirements are satisfied by the&nbsp;<a href="https://laravel.com/docs/5.5/homestead">Laravel Homestead</a>&nbsp;virtual machine, so it’s highly recommended that you use Homestead as your local Laravel development environment.<br>
+</p><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://laravel.com/docs/5.5/homestead"> https://laravel.com/docs/5.5/homestead</a> 			</div>
+</div>
+</div>  <p></p>
+<p>However, if you are not using Homestead, you will need to make sure your server meets the following requirements:</p>
+<div class="content-list">
+<ul>
+<li>PHP &gt;= 7.0.0</li>
+<li>OpenSSL PHP Extension</li>
+<li>PDO PHP Extension</li>
+<li>Mbstring PHP Extension</li>
+<li>Tokenizer PHP Extension</li>
+<li>XML PHP Extension</li>
+</ul>
+<p>Make Sure you got the server that fulfill above all requirements.</p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="source">Laravel Source Code Setup <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Now open the folder name (<strong>Laravel CMS Source Code</strong>) inside the downloaded package.</p>
+<p>Inside the folder you will find all the server side code.</p>
+
+<p><img class="size-full aligncenter" src="assets/images/server-maain-folder.png" alt="" width="553"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="db-setup">Mysql Database Setup <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Open folder with name <strong>Database</strong> inside downloaded package. Goto Phpmyadmin And import the .sql file to your sql database.</p>
+</div>
+<p>Now open .env file inside the <strong>Laravel CMS Source Code</strong> folder and change the following</p>
+<ul>
+<li>DB_DATABASE=’database name’</li>
+<li>DB_USERNAME=’user name’</li>
+<li>DB_PASSWORD=’password’</li>
+<li>MAIL_USERNAME=’your_email_id’</li>
+<li>MAIL_PASSWORD=’your_email_password’</li>
+</ul>
+<p>Now open config/mail.php file inside the <strong>Laravel CMS Source Code</strong> folder and change MAIL_FROM_ADDRESS and MAIL_FROM_NAME</p>
+
+<pre>
+	'from' => [
+		'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'), 
+		'name' => env('MAIL_FROM_NAME', 'Example'),
+    	],
+</pre>
+
+
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="settings">Upload Files &amp; Settings <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Now upload all files to the root of your domain.</p>
+<p>Now Open link http://your-domain/admin/login</p>
+<p><strong>username</strong>: demo@android.com</p>
+<p><strong>password</strong>:&nbsp;admin</p>
+<p><img class="aligncenter wp-image-13734 size-large" src="assets/images/admin-Login-1024x547.png" alt="" width="100%"></p>
+<p><strong>General Settings</strong></p>
+<p>After Login go to the <strong>Site Setting </strong>section. And change the settings according to your requirement.</p>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	<a href="http://your-domain/admin/setting">http://your-domain/admin/setting</a>			</div>
+</div>
+</div>
+<ul>
+<li>Currency Symbol</li>
+<li>New Product Duration</li>
+<li>Display Cart Button</li>
+<li>Facebook App ID</li>
+<li>Facebook Secret ID</li>
+</ul>
+<p>To get facebook id and secret id please follow this link</p>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	<a href="https://developers.facebook.com/docs/android/getting-started">https://developers.facebook.com/docs/android/getting-started</a>			</div>
+</div>
+</div>
+<ul>
+<li>Push Notification Setting (FCM) — App Key</li>
+<li>Push Notification Setting (FCM) — Sender Id</li>
+</ul>
+<p>To get sender id and app key please visit</p>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	<a href="https://firebase.google.com/docs/android/setup">https://firebase.google.com/docs/android/setup</a>			</div>
+</div>
+</div>
+<ul>
+ 	<li>AdMobe -- App Key</li>
+ 	<li>AdMobe -- Add Unit Id</li>
+</ul>
+<p>To get AdMobe App Key please visit</p>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	<a href="https://developers.google.com/admob/android/quick-start">https://developers.google.com/admob/android/quick-start</a>			</div>
+</div>
+</div>
+<ul>
+<li>Phone Number</li>
+<li>Address</li>
+<li>City</li>
+<li>State</li>
+<li>Zip</li>
+<li>Country</li>
+<li>Latitude</li>
+<li>Longitude</li>
+<li>Local Notification title and text</li>
+</ul>
+<p><img class="aligncenter wp-image-13870 size-full" src="assets/images/Admin-Panel-setting-2.jpg" alt="" width="100%"></p>
+<p><strong>Setting Shipping Methods</strong></p>
+<p>Go to the shipping methods section from the admin panel and setup your shipping methods.</p>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 http://your-domain/admin/shippingMethods			</div>
+</div>
+</div>
+<p><img class="aligncenter wp-image-13810 size-full" src="assets/images/Admin-Panel-Shipping-Methods.png" alt="" width="100%"></p>
+<p><strong>Setting Payment Methods</strong></p>
+<p>Go to the Payment Methods section from the admin panel and setup your desire payment methods.</p>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	http://your-domain/admin/paymentSetting			</div>
+</div>
+</div>
+<p><img class="aligncenter wp-image-13832 size-full" src="assets/images/cmsPayment.png" alt="" width="100%" ></p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h2 data-fontsize="24" data-lineheight="43" class="mkb-anchor__title" style="" id="android_installation">Installation – Android Mobile App <a href="#toc" title="To top" style="font-size:16px;">To Top</a></h2></div>
+<p>After CMS installation, please follow below instructions to set up your mobile application.</p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="started">Getting Started <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Download and install all latest tools, required for developing Android apps such as <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java Development Kit</a> and <a href="https://developer.android.com/studio/index.html">Android Studio</a> as the Official Android IDE. For updated tutorial about how to install them, you can see and Download from Android Developer website.<br>
+</p><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"> http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a> 			</div>
+</div>
+</div><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://developer.android.com/studio/index.html"> https://developer.android.com/studio/index.html</a> 			</div>
+</div>
+</div><p></p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="studio">Android Studio Setting <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>There are three main things interacting when you use Android Studio to create android applications.</p>
+<ul>
+<li>The code you write in Java or Kotlin to create interactive android apps</li>
+<li>Android Studio itself, an IDE that provides you with a nice interface for coding</li>
+<li>Android SDK, a selection of tools including the Android platform itself</li>
+</ul>
+<p>Now you can click on Android Studio to launch it. Once it opens up, you’ll be presented with a menu where you’ll be able to get started or configure some options. The great thing is that everything is handled for you at this point, though you may want to familiarize yourself with the SDK Manager (Configure &gt; SDK Manager) which is where you’ll update your Android SDK to support newer versions, as well as download things like code samples or support for Google Glass. But don’t worry about that now but if Android Studio says you’re missing something, this is where you’ll probably need to go to find it.</p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="import">Import Project in Android Studio <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Locate your Android app in the given project zip folder</p>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>Open Android Studio &gt; <strong>Import Project</strong> (Eclipse ADT, Gradle, etc.)</li>
+</ul>
+</li>
+</ul>
+<p><img class="aligncenter wp-image-13810 size-full"  src="assets/images/Capture1.0.png" alt=""></p>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>Browse to directory where you place <strong>“AndroidEcommerce”</strong> project and click OK.</li>
+</ul>
+</li>
+</ul>
+<p><img class="aligncenter wp-image-13810 size-full" src="assets/images/Capture1.2.png" alt=""></p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="rename">Rename App Package Name <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>First click once on your package and then click setting icon on Android Studio.</li>
+<li>Close / Unselect&nbsp;<strong>“Compact Empty Middle Packages”</strong></li>
+<li>Then, right click your package and rename it.</li>
+</ul>
+</li>
+</ul>
+<p><img class="aligncenter wp-image-13810 size-full" width="100%" src="assets/images/Capture2.0.png" alt=""></p>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>Right click on the root folder of your project.</li>
+<li>Click <strong>“Open Module Setting”</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><img class="aligncenter wp-image-13810 size-full" width="100%" src="assets/images/Capture2.1.png" alt=""></p>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>Go to the&nbsp;<strong>“Flavors”</strong> tab.</li>
+<li>Change the Application ID with same name of your package.</li>
+</ul>
+</li>
+</ul>
+<p><img class="aligncenter wp-image-13810 size-full" width="100%" src="assets/images/Capture2.2.png" alt=""></p>
+<ul>
+<li>Clean and Rebuild your project.</li>
+</ul>
+
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="change_path">Change Package Path in the Code <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<ul>
+ 	<li>Right click on  <strong>customs  </strong>package and click on <strong>Copy Reference  </strong>to copy the path of the package</li>
+ 	<li>Find  <strong>CustomListView  </strong>and change the given path as yours in the files
+		<ul>
+		 	<li><em>layout_categories_6.xml</em></li>
+		</ul>
+	</li>
+ 	<li>Find  <strong>CustomViewPager  </strong>and change the given path as yours in the files
+		<ul>
+		 	<li><em>product.xml</em></li>
+		 	<li><em>homepage_1.xml</em></li>
+		 	<li><em>homepage_2.xml</em></li>
+		</ul>
+	</li>
+ 	<li>Find  <strong>AppBarFlingScrollBehavior  </strong>and change the given path as yours in the files
+		<ul>
+		 	<li><em>news.xml</em></li>
+		 	<li><em>homepage_1.xml</em></li>
+		 	<li><em>homepage_2.xml</em></li>
+		</ul>
+	</li>
+ 	<li>Find  <strong>CircularImageView  </strong>and change the given path as yours in the files
+		<ul>
+		 	<li><em>signup.xml</em></li>
+		 	<li><em>settings.xml</em></li>
+		 	<li><em>activity_main.xml</em></li>
+		 	<li><em>update_account.xml</em></li>
+		 	<li><em>layout_categories_5.xml</em></li>
+		</ul>
+	</li>
+	<li>Clean and Rebuild your Project.</li>
+	<li>If it gives error again, change the path in the relevant files also.</li>
+</ul>
+
+
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="configuration">Google and FCM Configuration <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<ul>
+<li>Register your app project on the Google API Console and <a href="https://developers.google.com/maps/documentation/android-api/signup">Get Google API Key</a></li>
+<li>Import your Google project to Firebase following <a href="https://firebase.google.com/support/guides/google-android">these guidelines</a>.</li>
+<li>Integrate FCM to your android project as mentioned <a href="https://firebase.google.com/docs/android/setup">here</a>.</li>
+<li><a href="https://support.google.com/firebase/answer/7015592?hl=en">Download</a> the <strong>google-services.json</strong> config file of your FCM project.</li>
+<li>Replace new <strong>google-services.json</strong> file with existing at &nbsp;<i>app &gt; <strong>google-services.json</strong></i></li>
+</ul>
+<p></p><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	It is very important to import a Google project with Maps API enabled, to Firebase as we need both Google Maps and FCM services in android app.			</div>
+</div>
+</div><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://developers.google.com/maps/documentation/android-api/signup"> https://developers.google.com/maps/documentation/android-api/signup </a> 			</div>
+</div>
+</div><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://firebase.google.com/support/guides/google-android"> https://firebase.google.com/support/guides/google-android </a> 			</div>
+</div>
+</div><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://firebase.google.com/docs/android/setup"> https://firebase.google.com/docs/android/setup </a> 			</div>
+</div>
+</div><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://support.google.com/firebase/answer/7015592?hl=en"> https://support.google.com/firebase/answer/7015592?hl=en </a> 			</div>
+</div>
+</div><p></p>
+<p><img class="aligncenter wp-image-13810 size-full"  src="assets/images/Capture3.0.png" alt=""></p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="app_key">Facebook and Google App Key <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Get <a href="https://developers.facebook.com/docs/android/getting-started">Facebook Key</a> and <a href="https://developers.google.com/maps/documentation/android-api/signup">Google Key</a> and change both in <strong>strings.xml</strong></p>
+<p></p><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://developers.facebook.com/docs/android/getting-started">https://developers.facebook.com/docs/android/getting-started</a> 			</div>
+</div>
+</div><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://developers.google.com/maps/documentation/android-api/signup">https://developers.google.com/maps/documentation/android-api/signup</a> 			</div>
+</div>
+</div><p></p>
+<p><img class="aligncenter wp-image-13810 size-full" width="100%" src="assets/images/Capture4.0.png" alt=""></p>
+
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="configuration">Admobe Integration <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p> To Integrate Admobe in your app, follow <a href="https://developers.google.com/admob/android/quick-start"> this link</a>.</p>
+<ul>
+<li>Sign up for an <a href="https://support.google.com/admob/answer/7356219?visit_id=1-636486844898338926-136844531&rd=1"> AdMob account</a>.</li>
+<li><a href="https://support.google.com/admob/answer/2773509">Register an App</a>.</li>
+<li><a href="https://support.google.com/admob/answer/6383165">Link</a> the app to a Firebase project.</li>
+</ul>
+<p></p>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	It is very important to link the Admobe Apps to existing Firebase Apps as we also need FCM services in our app.</div>
+</div>
+</div>
+<div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://firebase.google.com/docs/admob/android/quick-start">https://firebase.google.com/docs/admob/android/quick-start</a></div>
+</div>
+</div>
+<p></p>
+
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="server_url">Change Server URL in Application <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Select  <i>app &gt; java &gt; yourpackagename &gt; constant &gt; <strong>ConstantValues.java</strong></i></p>
+<p><img class="aligncenter wp-image-13810 size-full" width="100%" src="assets/images/Capture7.0.png" alt=""></p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="debug">Debug Application <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Android Studio provides a debugger that allows you to do the following and more:</p>
+<ul>
+<li>Select a device to debug your app on.</li>
+<li>Set breakpoints in your Java, Kotlin, and C/C++ code.</li>
+<li>Examine variables and evaluate expressions at runtime.</li>
+</ul>
+<p><a href="https://developer.android.com/studio/debug/index.html">This</a> page includes instructions for basic debugger operations.<br>
+</p><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://developer.android.com/studio/debug/index.html">https://developer.android.com/studio/debug/index.html</a> 			</div>
+</div>
+</div><p></p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="test">Test Application <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>Android Studio is designed to make testing simple. With just a few clicks, you can set up a JUnit test that runs on the local JVM or an instrumented test that runs on a device.</p>
+<p>To test your app, follow some guidelines mentioned <a href="https://developer.android.com/studio/test/index.html">here</a>.<br>
+</p><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://developer.android.com/studio/test/index.html">https://developer.android.com/studio/test/index.html</a> 			</div>
+</div>
+</div><p></p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h4 data-fontsize="21" data-lineheight="37" class="mkb-anchor__title" style="" id="create">Create Release APK <a href="#toc" title="To top" style="font-size:14px;">To Top</a></h4></div>
+<p>To release your application to users you need to create a release-ready package that users can install and run on their Android-powered devices. The release-ready package contains the same components as the debug APK file — compiled source code, resources, manifest file, and so on — and it is built using the same build tools. However, unlike the debug APK file, the release-ready APK file is signed with your own.</p>
+<p>Follow <a href="https://developer.android.com/studio/publish/preparing.html">this link</a> to create a release APK, sign your app and to publish on Google Play Store.<br>
+</p><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://developer.android.com/studio/publish/preparing.html">https://developer.android.com/studio/publish/preparing.html</a> 			</div>
+</div>
+</div><p></p>
+<div class="mkb-anchor mkb-clearfix mkb-back-to-top-inline"><h2 data-fontsize="24" data-lineheight="43" class="mkb-anchor__title" style="" id="faq">FAQ’s <a href="#toc" title="To top" style="font-size:16px;">To Top</a></h2></div>
+<p><strong>Q: How to change Application Icons?</strong><br>
+<strong>Ans:</strong> Change all launcher icons in  <i>app &gt; res &gt; mipmap &gt; <strong>ic_launcher.png</strong></i><br>
+<img class="aligncenter wp-image-13810 size-full" width="100%" src="assets/images/Capture8.0.png" alt=""></p>
+<p><strong>Q: How to change Application Name?</strong><br>
+<strong>Ans:</strong> Select  <i>app &gt; res &gt; values &gt; <strong>strings.xml</strong></i><br>
+<img class="aligncenter wp-image-13810 size-full" width="100%" src="assets/images/Capture5.0.png" alt=""></p>
+<p><strong>Q: How to change Application Colors?</strong><br>
+<strong>Ans:</strong> Change colors as you need in  <i>app &gt; res &gt; values &gt; <strong>colors.xml</strong></i><br>
+<img class="aligncenter wp-image-13810 size-full" width="100%" src="assets/images/Capture6.0.png" alt=""></p>
+<p><strong>Q: How to change Splash Screen of App?</strong><br>
+<strong>Ans:</strong>You can easily change splash screen by following steps:</p>
+<ul>
+<li>Add your splash images in  <i>app &gt; res &gt; drawable &gt; <strong>splash.png</strong></i></li>
+<li>Modify  <i>res &gt; layout &gt; <strong>splash.xml</strong></i>  as you need</li>
+</ul>
+<p><strong>Q: How to change Intro Slides of App?</strong><br>
+<strong>Ans:</strong> You can change intro slides by following steps:</p>
+<ul>
+<li>Add your intro images in  <i>app &gt; res &gt; <strong>drawable</strong></i></li>
+<li>Modify <strong>intro_slide_1.xml</strong> layout as you need</li>
+<li>Modify Slide title and description in all <strong>strings.xml</strong> files</li>
+<li>Modify other intro slide layout files according to your requirement</li>
+<li>Add your customized slides to  <i>activities &gt; <strong>IntroScreen.java</strong></i></li>
+</ul>
+<p>For more customization visit <a href="https://github.com/apl-devs/AppIntro">AppIntro</a>, as <strong>IIntroScreen </strong> Iextends <a href="https://github.com/apl-devs/AppIntro">AppIntro</a>.<br>
+</p><div class="mkb-shortcode-container">		<div class="mkb-info">
+<div class="mkb-info__icon">
+	<i class="fa fa-lg fa-info-circle"></i>
+</div>
+<div class="mkb-info__content">
+	 <a href="https://github.com/apl-devs/AppIntro"> https://github.com/apl-devs/AppIntro </a> 			</div>
+</div>
+</div><br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture9.0.png" alt=""><p></p>
+<p><strong>Q: How to add new Language in the App?</strong><br>
+<strong>Ans:</strong> Add a new resource file  <i>res &gt; New &gt; <strong>Android resource file</strong></i><br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture13.0.png" alt=""><br>
+Name it as <strong>strings</strong> and choose <strong>Locale</strong> as Qualifier. Select a language you want to add and choose <strong>Any Region</strong> for it.<br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture13.1.png" alt=""><br>
+Open the newly added <strong>strings.xml</strong> file. Copy any string from other language’s <strong>strings.xml</strong> file and paste it in the <strong>strings.xml</strong> of the new language.<br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture13.2.png" alt=""><br>
+Open Translation Editor  <i>res &gt; values &gt; strings.xml &gt; <strong>Open Translations Editor</strong></i><br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture13.3.png" alt=""><br>
+Enter all the values of required labels/keys in the newly added language in the editor.<br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture13.4.png" alt=""><br>
+Now go to <strong>Admin Panel</strong> and open <strong>Languages</strong> page. Click on <strong>Add Language</strong> button.<br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture13.5.png" alt=""><br>
+Enter all the required details of the language you want to add.<br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture13.6.png" alt=""><br>
+Make sure that the language code you entered in the language section in Admin Panel is same as the language code in Android Studio<br>
+<img class="size-full wp-image-13661 aligncenter" width="100%" src="assets/images/Capture13.8.png" alt=""></p>
+</div>		<div class="mkb-article-extra">
+<div class="mkb-article-extra__hidden">
+	<span class="mkb-article-extra__tracking-data" data-article-id="12178" data-article-title="Documentation"></span>
+</div>
+</div>
+</div></div><!-- .mkb-single-content --></div><!-- #mkb-article-## --></div>
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
